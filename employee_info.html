@@ -1,0 +1,10 @@
+<b>{{employee.name}}</b> - {{employee.job}}
+<br/><br/>
+<div ng-show='!!employee.followers'>
+  followers
+  <ul>
+    <li ng-repeat='name in employee.followers'>{{name}}</li>
+  </ul>
+  <button ng-click="follow('Galaa')">follow</button>
+</div>
+</div>  
